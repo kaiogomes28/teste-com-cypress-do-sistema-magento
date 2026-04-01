@@ -1,5 +1,5 @@
 ## Teste QA - Automação E2E com Cypress
-### Objetivo
+### 1. Objetivo
 
 - Este projeto tem como objetivo automatizar cenários end-to-end (E2E) utilizando Cypress, validando fluxos críticos de um e-commerce baseado no Magento.
 
@@ -10,7 +10,7 @@
 - Adição de produto ao carrinho
 - Finalização de compra
 
-### Tecnologias Utilizadas
+### 2. Tecnologias Utilizadas
 - Cypress → Framework de automação E2E
 - JavaScript (ES6+)
 - ESLint (Flat Config) → Padronização de código
@@ -18,7 +18,7 @@
 - nanoid → Geração de dados dinâmicos
 - cypress-real-events → Simulação de interações reais
 
-### Instalação do Projeto
+### 3. Instalação do Projeto
 
 - Foi criado um script personalizado para facilitar a instalação das dependências:
   
@@ -28,7 +28,7 @@
 
 ```npm install```
 
-### Execução dos Testes
+### 4. Execução dos Testes
 
 - Rodar testes em modo headless
 
@@ -42,7 +42,7 @@
 
 ```npm run cypress:open```
 
-### Lint (Padronização de Código)
+### 5. Lint (Padronização de Código)
 
 - Para garantir qualidade e padronização:
 
@@ -63,7 +63,7 @@
 - simple-import-sort
 
 
-### Estrutura do Projeto
+### 6. Estrutura do Projeto
 
 ```js
 cypress/
@@ -87,7 +87,7 @@ cypress/
 └── eslint.config.mjs
 ```
 
-### Padrão Utilizado: Page Object Model (POM)
+### 7. Padrão Utilizado: Page Object Model (POM)
 
 - Foi utilizado o padrão Page Object Model para:
   - Melhorar a organização
@@ -112,7 +112,7 @@ import { addProductToCart } from '../pages/product';
 addProductToCart();
 ```
 
-### Comandos Customizados
+### 8. Comandos Customizados
 
 - Os comandos foram centralizados em:
 
@@ -127,7 +127,7 @@ addProductToCart();
 ```cy.registerUser(user);```
 ```cy.logoutUser();```
 
-### Cenários Automatizados
+### 9. Cenários Automatizados
 #### Scenario 1: Cadastro de Usuário
 
 - Fluxo:
@@ -166,7 +166,7 @@ addProductToCart();
 - Validações:
   - Pedido criado com sucesso
 
-### Uso de Intercepts
+### 10. Uso de Intercepts
 
 -  Foi utilizado cy.intercept para:
   - Monitorar requisições
@@ -176,7 +176,7 @@ addProductToCart();
 
 ```cy.intercept(paymentPage.intercept.postPaymentInformation).as('postPaymentInformation');```
 
-### Boas Práticas Aplicadas
+### 11. Boas Práticas Aplicadas
 
 - Uso de dados dinâmicos com nanoid
 - Evitar seletores frágeis (uso de Testing Library)
