@@ -1,4 +1,4 @@
-# Teste Tecnico QA - Automacao E2E Web (Magento)
+# Teste QA - Automacao E2E Web (Magento)
 
 Automacao de testes funcionais end-to-end com Cypress no site de demonstracao:
 
