@@ -1,0 +1,40 @@
+{
+    "folders": [
+      {
+        "path": "."
+      }
+    ],
+    "settings": {
+		"editor.tabSize": 4, 
+		"editor.fontSize": 14,
+		"editor.lineHeight": 18,
+		"files.eol": "\n",
+		"files.autoSave": "off",
+		"files.autoSaveDelay": 500,
+		"files.insertFinalNewline": true,
+    	"files.trimFinalNewlines": true,
+		"editor.formatOnSave": true, //You can change if doesn't like format on save.
+		"editor.insertSpaces": false,
+		"editor.detectIndentation": false,
+		"terminal.integrated.fontSize": 14, 
+		"editor.rulers": [ 
+			80,
+			180
+		],
+		"javascript.updateImportsOnFileMove.enabled": "always",
+		
+		"eslint.validate": [
+			"javascript"
+		],
+		"eslint.useFlatConfig": true,
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": "explicit"
+		},
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint",
+		"eslint.format.enable": true,
+		"eslint.enable": true,
+		"[javascript]": {
+		  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+		},
+    }
+}
